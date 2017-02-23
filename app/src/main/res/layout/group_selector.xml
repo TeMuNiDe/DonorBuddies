@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_margin="7dp"
+        android:gravity="center"
+    >
+    <com.vitech.donorbuddies.data.BloodGroupSelector
+        android:layout_width="50dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:id="@+id/blood"
+        android:textSize="20sp"
+        android:layout_height="50dp"
+        android:checked="true"
+        android:text="A+"/>
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/activity_dash_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="#ffffff"
+
+        tools:context="com.vitech.donorbuddies.DashBoard">
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/divider"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.3"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp" />
+<FrameLayout
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toTopOf="@+id/divider"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            app:backgroundTint="#ffffff"
+            android:layout_gravity="center"
+            android:src="@drawable/cut_icon"
+
+android:scaleType="fitCenter"
+            android:id="@+id/new_request"
+            android:layout_margin="5dp"
+            />
+
+</FrameLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dash_board_list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            tools:layout_constraintTop_creator="1"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:textSize="30sp"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/divider"
+            android:visibility="visible"
+            android:id="@+id/no_request_string"
+            android:text="Every one is Happy,Just pray for the world"
+            />
+    </android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:visibility="gone"
+        app:cardCornerRadius="@dimen/cardview_default_radius"
+        app:cardElevation="5dp"
+
+
+        android:id="@+id/new_request_layout"
+android:background="#ffffff"
+
+        android:divider="@color/cardview_light_background"
+        android:dividerPadding="7dp">
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/new_request_parent"
+            android:padding="5dp">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Name (Tap to Edit)"
+            app:met_floatingLabel="highlight"
+            app:met_hideUnderline="true"
+            android:id="@+id/new_request_name"
+            app:met_clearButton="true"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/new_request_contact" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="highlight"
+            app:met_hideUnderline="true"
+            android:id="@+id/new_request_contact"
+            app:met_clearButton="true"
+            android:inputType="phone"
+            app:layout_constraintTop_toBottomOf="@+id/new_request_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/new_request_hospital"
+            android:hint="Contact number (Tap to Edit)" />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="highlight"
+            app:met_hideUnderline="true"
+            app:layout_constraintTop_toBottomOf="@+id/new_request_contact"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/new_request_message"
+            app:met_clearButton="true"
+android:id="@+id/new_request_hospital"
+
+            android:hint="Hospital"/>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+            app:met_floatingLabel="highlight"
+            app:met_hideUnderline="true"
+            app:met_clearButton="true"
+            app:layout_constraintTop_toBottomOf="@+id/new_request_hospital"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/select_primary"
+            android:id="@+id/new_request_message"
+            android:hint="Message (Optional)" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/select_primary"
+                android:text="Select Primary Blood Group"
+                app:layout_constraintTop_toBottomOf="@+id/new_request_message"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/new_request_primary"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/new_request_primary"
+android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/select_primary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/select_substitute"
+                android:numColumns="5"
+                tools:listheader="select Primary group">
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/select_substitute"
+                android:text="Select Substitute Blood Group(s)"
+                app:layout_constraintTop_toBottomOf="@+id/new_request_primary"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/new_request_substitute"
+                />
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:id="@+id/new_request_substitute"
+                app:layout_constraintTop_toBottomOf="@+id/select_substitute"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:numColumns="5"></android.support.v7.widget.RecyclerView>
+
+
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

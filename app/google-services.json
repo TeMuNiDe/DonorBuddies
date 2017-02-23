@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "788727888931",
+    "firebase_url": "https://donor-buddies.firebaseio.com",
+    "project_id": "donor-buddies",
+    "storage_bucket": "donor-buddies.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788727888931:android:832234fc69d8c55a",
+        "android_client_info": {
+          "package_name": "com.vitech.donorbuddies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788727888931-18kgltgcha1ak3hq3cd43qdnepljti3k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vitech.donorbuddies",
+            "certificate_hash": "96F277AC26CD4B76F71A1123218356B68A6386C0"
+          }
+        },
+        {
+          "client_id": "788727888931-hsj0pmi3do8qhrjlcskf36n7i55k44jj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUH-k_SpSfnjci040U5k1strAigj4TFrc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788727888931-hsj0pmi3do8qhrjlcskf36n7i55k44jj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

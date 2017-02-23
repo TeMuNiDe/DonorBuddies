@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+   android:layout_height="wrap_content"
+    app:cardBackgroundColor="#ffffff"
+    android:layout_margin="5dp"
+    >
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:padding="10dp"
+android:id="@+id/constraint_parent"
+        >
+        <ImageView
+            android:contentDescription="Substitute Blood Group"
+    android:id="@+id/blood_group_substitute"
+    android:layout_width="0dp"
+    android:layout_height="30dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+    android:src="@android:color/holo_red_light"
+    app:layout_constraintRight_toRightOf="@+id/request_info"
+    app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/blood_group_primary"
+        app:layout_constraintLeft_toRightOf="@+id/blood_group_primary"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:id="@+id/blood_group_substitute_text"
+            app:layout_constraintRight_toRightOf="@+id/request_info"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/blood_group_primary"
+            app:layout_constraintLeft_toRightOf="@+id/blood_group_primary"
+            android:text="O+    B+    HH"
+            android:gravity="center_vertical|left"
+android:textColor="#ffffff"
+            />
+    <TextView
+        android:gravity="center_vertical"
+        android:paddingTop="10dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/request_info"
+        android:layout_width="0dp"
+
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/blood_group_primary"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/request_time"
+        app:layout_constraintTop_toBottomOf="@+id/blood_group_substitute"
+        android:text="Guy in Need, Name and Address of the Hospital"
+                 />
+    <TextView
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/request_time"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/request_info"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="11:01 AM"
+        android:gravity="right"/>
+        <ImageView
+            android:contentDescription="Pimary Blood Group"
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:src="@drawable/red_circle"
+            android:id="@+id/blood_group_primary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintDimensionRatio="1"
+            android:cropToPadding="false"
+            android:clickable="true"
+            android:filterTouchesWhenObscured="false"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/blood_group_primary_text"
+            app:layout_constraintRight_toRightOf="@id/blood_group_primary"
+            app:layout_constraintLeft_toLeftOf="@id/blood_group_primary"
+            app:layout_constraintTop_toTopOf="@id/blood_group_primary"
+            app:layout_constraintBottom_toBottomOf="@id/blood_group_primary"
+            android:textSize="20sp"
+            android:text="A+"
+            android:gravity="center"
+            android:textColor="#ffffff"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

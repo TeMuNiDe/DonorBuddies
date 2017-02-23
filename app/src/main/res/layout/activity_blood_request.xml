@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_blood_request"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.vitech.donorbuddies.BloodRequestActivity">
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:id="@+id/message"
+    android:textSize="20sp"
+    android:textColor="@color/colorPrimaryDark"
+    app:layout_constraintTop_toTopOf="@id/activity_blood_request"
+    app:layout_constraintBottom_toTopOf="@+id/call"
+    app:layout_constraintRight_toRightOf="@id/activity_blood_request"
+    app:layout_constraintLeft_toLeftOf="@id/activity_blood_request"
+    android:layout_margin="10dp" />
+       <Button
+        android:text=""
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/share"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/call"
+        app:layout_constraintDimensionRatio="1"
+app:layout_constraintHorizontal_chainStyle="packed"
+           android:layout_margin="10dp"
+
+        android:onClick="Share"
+        android:background="@drawable/share_icon"
+        />
+
+    <Button
+        android:text=""
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/call"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/share"
+        app:layout_constraintRight_toLeftOf="@+id/locate"
+        android:onClick="Call"
+        app:layout_constraintDimensionRatio="1"
+        android:background="@drawable/call_icon" />
+    <Button
+        android:text=""
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:id="@+id/locate"
+        android:layout_margin="10dp"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintLeft_toRightOf="@id/call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/delete"
+        android:onClick="Locate"
+        android:background="@drawable/locate_icon" />
+ <Button
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintDimensionRatio="1"
+        android:id="@+id/delete"
+       android:visibility="gone"
+        android:text=""
+     android:layout_margin="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/locate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/del_icon" />
+
+</android.support.constraint.ConstraintLayout>

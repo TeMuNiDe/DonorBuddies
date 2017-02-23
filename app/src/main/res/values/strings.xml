@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ATP Donors</string>
+    <string name="def_no_request_string">Every one is Happy,Just pray for the world</string>
+    <string name="def_bloodrequest_message">This person is in grave need for blood,Show them they are not Alone</string>
+</resources>
