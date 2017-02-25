@@ -227,6 +227,7 @@ if(!dirty) {
             case R.id.rate:Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse("market://details?id="+getPackageName()));
                 startActivity(i);break;
+            case R.id.about:startActivity(new Intent(getApplicationContext(),About.class));
         }
 
 

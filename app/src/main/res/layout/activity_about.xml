@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="16dp"
+    tools:context="com.vitech.donorbuddies.About">
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:text="Our sincere thanks to"
+    android:textColor="@color/colorPrimary"
+    android:textSize="20sp"
+    android:gravity="center"
+    android:id="@+id/thanks"
+    android:textStyle="italic"
+
+   />
+    <TextView
+        android:layout_width="0dp"
+        android:id="@+id/sanjeevini"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/thanks"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingTop="10dp"
+        android:text="Sanjeevini Blood Bank Ramana Reddy"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+
+        />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/sanjeevini"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        android:id="@+id/logo"
+
+        android:src="@drawable/request"
+
+
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/dev_by"
+        android:text="Developed By"
+        android:gravity="end|center_vertical"
+        android:textSize="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline"
+        app:layout_constraintRight_toLeftOf="@+id/dev_name"
+        app:layout_constraintBottom_toTopOf="@+id/con_by"
+ />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/dev_name"
+        android:text="CH Vihaari Varma"
+        android:gravity="center_vertical"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/dev_by"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dev_by"
+        app:layout_constraintBottom_toTopOf="@+id/con_name"
+
+        />
+    <TextView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+        android:id="@+id/con_by"
+        android:textSize="20dp"
+        android:text="Concept By"
+        android:paddingRight="20dp"
+        android:gravity="end|center_vertical"
+        app:layout_constraintRight_toLeftOf="@+id/con_name"
+        app:layout_constraintTop_toBottomOf="@+id/dev_by"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/gaga"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/con_name"
+        android:textSize="20dp"
+        android:text="Harshith"
+
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toRightOf="@+id/con_by"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/con_by"
+        app:layout_constraintBottom_toBottomOf="@+id/con_by"
+      />
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:textSize="20dp"
+    android:id="@+id/gaga"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/con_by"
+    android:gravity="center_horizontal"
+    android:text="From Gaga..."/>
+    <android.support.constraint.Guideline
+        android:layout_width="384dp"
+        android:layout_height="0dp"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_percent="0.7"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="358dp"
+        tools:layout_editor_absoluteX="0dp" />
+</android.support.constraint.ConstraintLayout>
